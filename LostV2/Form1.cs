@@ -23,7 +23,7 @@ namespace LostV2
         // random number generator
         Random randGen = new Random();
 
-        //sounds
+        //sounds for losing and winning
         SoundPlayer player = new SoundPlayer(Properties.Resources.Game_Over___The_Legend_of_Zelda_Breath_of_the_Wild_OST);
         SoundPlayer player2 = new SoundPlayer(Properties.Resources.Success);
         public Form1()
