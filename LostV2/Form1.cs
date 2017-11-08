@@ -16,7 +16,7 @@ namespace LostV2
 {
     public partial class Form1 : Form
     {
-        // tracks what part of the game the user is at
+        // tracks what part of the game the user is at //
         int scene = 0;
 
         // random number generator
