@@ -1,5 +1,5 @@
 ﻿/// created by : Maya Redford-Haines
-/// date       : November 2 2017
+/// date       : November 8 2017
 /// description: A text adventure game
 
 using System;
