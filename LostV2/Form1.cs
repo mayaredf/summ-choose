@@ -57,6 +57,7 @@ namespace LostV2
                 else if (scene == 5) { scene = 15; }
                 else if (scene == 15) { scene = 0; }
                 else if (scene == 14) { scene = 0; }
+                else if (scene == 10) { scene = 15; }
 
                 if (scene == 8)
                 {
