@@ -106,6 +106,15 @@
   <ItemGroup>
     <None Include="Resources\yellow_50x50.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Game Over - The Legend of Zelda Breath of the Wild OST.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Spirit Orb Obtained - Zelda Breath of the Wild Soundtrack.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Success.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

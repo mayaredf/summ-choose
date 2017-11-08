@@ -11,17 +11,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace LostV2
 {
     public partial class Form1 : Form
     {
-        // tracks what part of the game the user is at //
+        // tracks what part of the game the user is at 
         int scene = 0;
 
         // random number generator
         Random randGen = new Random();
 
+        //sounds
+        SoundPlayer player = new SoundPlayer(Properties.Resources.Game_Over___The_Legend_of_Zelda_Breath_of_the_Wild_OST);
+        SoundPlayer player2 = new SoundPlayer(Properties.Resources.Success);
         public Form1()
         {
             InitializeComponent();
@@ -52,6 +56,8 @@ namespace LostV2
                 else if (scene == 12) { scene = 15; }
                 else if (scene == 5) { scene = 15; }
                 else if (scene == 15) { scene = 0; }
+                else if (scene == 14) { scene = 0; }
+
                 if (scene == 8)
                 {
                     int rand = randGen.Next(1, 101);
@@ -98,6 +104,7 @@ namespace LostV2
                     redLabel.Text = "Ok";
                     blueLabel.Text = "";
                     greenLabel.Text = "";
+                    player.Play();
                     break;
                 case 3:
                     outputLabel.Text = "You look around you for anything interesting. Suddenly, you see a dark shadow that looks like a person. Do you approach them?";
@@ -116,6 +123,7 @@ namespace LostV2
                     redLabel.Text = "Ok";
                     blueLabel.Text = "";
                     greenLabel.Text = "";
+                    player.Play();
                     break;
                 case 6:
                     outputLabel.Text = "You approach them more. You don't know why you ever thought it looked like a person. Suddenly, it raises a limb and points towards a part of the forest you don't recognize.";
@@ -128,6 +136,7 @@ namespace LostV2
                     redLabel.Text = "Ok";
                     blueLabel.Text = "";
                     greenLabel.Text = "";
+                    player2.Play();
                     break;
                 case 8:
                     outputLabel.Text = "You can see a small cave in the distance that might be perfect for a shelter.";
@@ -146,6 +155,7 @@ namespace LostV2
                     redLabel.Text = "Ok";
                     blueLabel.Text = "";
                     greenLabel.Text = "";
+                    player.Play();
                     break;
                 case 11:
                     outputLabel.Text = "After you leave the bush alone, you see what looks like a cave. Get closer?";
@@ -158,6 +168,7 @@ namespace LostV2
                     redLabel.Text = "Ok";
                     blueLabel.Text = "";
                     greenLabel.Text = "";
+                    player.Play();
                     break;
                 case 13:
                     outputLabel.Text = "You feel safe and comfortable. You can take a rest, or look around more outside.";
